@@ -1,8 +1,8 @@
-/* General Styles */
+
 body {
     background-color: #fcfbfb;
     color: #333;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #content {
@@ -13,7 +13,6 @@ body {
 
 header {
     background-color: rgba(20, 30, 13, 0.7);
-    text-align: center;
     padding: 20px;
     color: #fcfbfb;
 }
@@ -22,8 +21,8 @@ nav a {
     text-align: center;
     color: #fcfbfb;
     text-decoration: none;
-    padding: 10px 20px;
     display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
@@ -39,6 +38,10 @@ nav a:hover {
     width: 80px;
 }
 
+.hero-img {
+    width: 80px;
+}
+
 #background {
     height: 725px;
     background-color: #396E94;
@@ -47,12 +50,13 @@ nav a:hover {
 footer {
     background-color: #381D2A;
     color: #fcfbfb;
-    text-align: center;
     padding: 20px;
 }
 
 footer a {
     text-decoration: none;
+    color: #fcfbfb;
+    transition: text-decoration 0.3s;
 }
 
 footer a:hover {
@@ -63,7 +67,7 @@ footer p {
     font-size: 1.2em;
 }
 
-.main section {
+main section {
     text-align: center;
 }
 
@@ -72,6 +76,7 @@ footer p {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
 .book:hover, .join:hover {
@@ -84,4 +89,33 @@ footer p {
 
 .msg p {
     color: #381D2A;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+
+.button-box {
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #d9c2a3;
+}
+
+
+footer p {
+    font-size: 1.2em;
+}
+
+
+footer p a:hover {
+    text-decoration: underline;
 }
