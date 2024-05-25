@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rock+Salt&display=swap');
+
 
 body {
     background-color: #fcfbfb;
+    font-size: 22px;
     color: #333;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main section {
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+h4 {
+    background-color: black;
+    color: #d9c2a3;
 }
 
 #content {
@@ -23,6 +41,7 @@ nav a {
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -30,12 +49,23 @@ nav a:hover {
     color: #d9c2a3;
 }
 
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 .logo {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px; 
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .hero-img {
@@ -50,7 +80,8 @@ nav a:hover {
 footer {
     background-color: #381D2A;
     color: #fcfbfb;
-    padding: 20px;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -67,20 +98,30 @@ footer p {
     font-size: 1.2em;
 }
 
-main section {
-    text-align: center;
+footer .social img {
+    padding-top: 15px;
 }
 
 .book, .join {
     background-color: #E7C24F;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     transition: background-color 0.3s;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
+    background-color: black;
     background-color: #A43312;
+}
+
+.msg {
+    background-color: #fcfbfb; 
+    padding: 35px;
 }
 
 .msg h2 {
@@ -89,22 +130,36 @@ main section {
 
 .msg p {
     color: #381D2A;
+    line-height: 1.5em;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    padding-bottom: 15px;
 }
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
 
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+}
 
 .button-box {
     text-align: center;
 }
 
-a {
+/*a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s;
-}
+}*/
 
 a:hover {
     color: #d9c2a3;
