@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d1e0f0;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+  
+  main {
+    padding: 40px;
+  }
+  
+  .work-projects {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners for the section */
+  }
+  
+  .work-projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows projects to wrap to the next line */
+    justify-content: space-between; /* Evenly distributes projects */
+  }
+  
+  .project {
+    width: calc(33% - 20px); /* Calculates width based on 3 columns */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .project img {
+    width: 100%;
+    border-radius: 5px; /* Rounded corners for project images */
+    margin-bottom: 10px;
+  }
+  
+  .project h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .project p {
+    margin-bottom: 10px;
+  }
+  
+  .project a {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .project a:hover {
+    background-color: #444;
+  }
+  
+  /* Styles for your footer (refer to previous example) */
+  
