@@ -1,117 +1,142 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #f5f5f5;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d1e0f0;
-    padding: 10px 20px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d1e0f0;
+  padding: 10px 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
+main {
+  padding: 40px;
 }
 
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  main {
-    padding: 40px;
-  }
-  
-  .contact-form {
-    background-color: #fff;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 5px; /* Rounded corners for the form */
-    display: flex; /* Arranges profile picture and form side-by-side */
-  }
-  
-  .contact-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    flex: 1; /* Ensures title takes full width */
-  }
-  
-  .profile-picture {
-    margin-right: 20px; /* Spacing between profile picture and form */
-  }
-  
-  .profile-picture img {
-    width: 150px; /* Adjust width as needed */
-    border-radius: 50%; /* Rounded corners for profile picture */
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-    flex: 2; /* Allocates more space for the form */
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-  }
-  
-  .form-group textarea {
-    height: 100px; /* Adjust height as needed */
-  }
-  
-  .button-container {
-    text-align: center;
-    margin-top: 20px;
-    flex: 2; /* Allocates space for buttons within the form section */
-  }
-  
-  .button-container button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .button-container button:hover {
-    background-color: #444;
-  }
-  
-  /* Styles for your footer (refer to previous example) */
-  
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form-group input {
+  position: relative;
+}
+
+.form-group input::after {
+  content: '\2713';
+  font-size: 20px;
+  color: green;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button-container button:hover {
+  background-color: #444;
+}
+
+.profile-picture {
+  margin-left: 20px;
+}
+
+.profile-picture img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+footer .social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+footer .social-media a:hover {
+  background-color: #ddd;
+}
